@@ -1,2 +1,2 @@
 # I-Spin
-Matlab interface to identify motor unit spiking activity in real-time and display biofeedbacks based on this activity.
+Matlab interface to identify motor unit discharge activity in real-time using blind source separation and display biofeedbacks based on this discharge activity.
