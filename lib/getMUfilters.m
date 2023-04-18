@@ -5,6 +5,7 @@ nbextchan = 1500;
 exFactor = round(nbextchan/size(EMG,1));
 eSIG = extend(EMG,exFactor);
 
+
 % Recalculate MUfilters
 MUFilters = zeros(size(eSIG,1), length(Distime));
 for i = 1:length(Distime)

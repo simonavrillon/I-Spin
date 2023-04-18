@@ -1,5 +1,3 @@
-
-
 function [PulseT, Distime, esample2] = getspikesonline(EMGtmp, extensionfactor, esample2, MUfilt, norm, noise_centroids, spike_centroids, nsamp, fsamp)
     esample1 = extend(EMGtmp, extensionfactor);
     esample = esample1(:,1:nsamp);
