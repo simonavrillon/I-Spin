@@ -829,7 +829,7 @@ classdef ISpin_exported < matlab.apps.AppBase
 
                 % Remove duplicates
                 close(f)
-                [~, Distime] = remduplicates(PulseT, Distime, Distime, exFactor, 0.3);
+                [~, Distime] = remduplicates(PulseT, Distime, Distime, round(str2double(app.FrequencyDropDown.Value)/40), 0.00025, 0.3, str2double(app.FrequencyDropDown.Value));
 
                 % Get the decomposition parameters for the biofeedback
                 app.DecompParameters.MUFilters{i} = getMUfilters(EMG((i-1)*64+1:i*64,:), app.RecordParameters.DiscardChannels{i}, Distime);
@@ -3308,7 +3308,7 @@ classdef ISpin_exported < matlab.apps.AppBase
             app.FrequencyDropDown.FontColor = [0.8118 0.502 1];
             app.FrequencyDropDown.BackgroundColor = [0.149 0.149 0.149];
             app.FrequencyDropDown.Position = [94 458 116 25];
-            app.FrequencyDropDown.Value = '10240';
+            app.FrequencyDropDown.Value = '2048';
 
             % Create StartVisualizationCheckEMGButton
             app.StartVisualizationCheckEMGButton = uibutton(app.RecordingSettingsPanel, 'push');
