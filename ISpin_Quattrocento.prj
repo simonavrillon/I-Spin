@@ -1,0 +1,103 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1460285597" file="/Users/savrillo/Documents/Code/I-Spin_dev/ISpin_Quattrocento.prj" location="/Users/savrillo/Documents/Code/I-Spin_dev" name="ISpin_Quattrocento" target="target.mlapps" target-name="Package App">
+    <param.appname>ISpin_Quattrocento</param.appname>
+    <param.authnamewatermark>Simon Avrillon</param.authnamewatermark>
+    <param.email>s.avrillon@imperial.ac.uk</param.email>
+    <param.company>Imperial College London</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot>/private/var/folders/g4/827tkn3d5t7chp02b0wrxhvm0000gp/T/tpd53f0cee_0f63_419a_bf05_a5c601f2d106.png</param.screenshot>
+    <param.version>1.1</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>3ec263a0-a500-4b7a-9ad4-2e98d1e9b332</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/ISpin_Quattrocento.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/lib/CRC8.m</file>
+      <file>${PROJECT_ROOT}/lib/Quattrodlg.m</file>
+      <file>${PROJECT_ROOT}/lib/bitseqquattro.m</file>
+      <file>${PROJECT_ROOT}/lib/calcSIL.m</file>
+      <file>${PROJECT_ROOT}/lib/demean.m</file>
+      <file>${PROJECT_ROOT}/lib/extend.m</file>
+      <file>${PROJECT_ROOT}/lib/fixedpointalg.m</file>
+      <file>${PROJECT_ROOT}/lib/formatsignalHDEMG.m</file>
+      <file>${PROJECT_ROOT}/lib/getMUfilters.m</file>
+      <file>${PROJECT_ROOT}/lib/getPulseT.m</file>
+      <file>${PROJECT_ROOT}/lib/getgridconfigQuattro.m</file>
+      <file>${PROJECT_ROOT}/lib/getonlineparameters.m</file>
+      <file>${PROJECT_ROOT}/lib/getsil.m</file>
+      <file>${PROJECT_ROOT}/lib/getspikes.m</file>
+      <file>${PROJECT_ROOT}/lib/getspikesonline.m</file>
+      <file>${PROJECT_ROOT}/lib/minimizeCOVISI.m</file>
+      <file>${PROJECT_ROOT}/lib/notchsignals.m</file>
+      <file>${PROJECT_ROOT}/lib/pcaesig.m</file>
+      <file>${PROJECT_ROOT}/lib/remduplicates.m</file>
+      <file>${PROJECT_ROOT}/lib/whiteesig.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/savrillo/Documents/Code" name="I-Spin_dev" optional="false">/Users/savrillo/Documents/Code/I-Spin_dev</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2023b.app</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="fixedpoint" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>14.5</osver>
+      <os32>true</os32>
+      <os64>false</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
