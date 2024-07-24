@@ -4,7 +4,7 @@ I-spin Quattrocento is a Matlab app interfacing with a multichannel EMG recordin
 We provide here a step-by-step protocol to facilitate the implementation of I-Spin live in any experimental settings. You can also read our preprint that describes the method, the main steps of the experiments, and the capabilities of the app (https://www.biorxiv.org/content/10.1101/2023.04.14.536933v2). 
 
 # Updates:
-August 2024: Release of I-spin Open Ephys that interface with the Open Ephys GUI (compatible with the Open Ephys acquisition board or the Intan RHD recording system)
+August 2024: Release of I-spin Open Ephys that interfaces with the Open Ephys GUI (compatible with the Open Ephys acquisition board or the Intan RHD recording system)
 
 September-October 2024: Release of I-Spin on Python
 
