@@ -1,9 +1,9 @@
 function [PulseT, Distime, exFactor] = getPulseT(EMG, EMGmask, MUFilters, fsamp)
 
 EMG(EMGmask > 0,:) = [];
-nbextchan = 1500;
+nbextchan = 1000;
 exFactor = round(nbextchan/size(EMG,1));
-eSIG = extend(EMG,exFactor);
+eSIG = demean(extend(EMG,exFactor));
 ReSIG = eSIG*eSIG'/length(eSIG);
 iReSIGt = pinv(ReSIG);
 

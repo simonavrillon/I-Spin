@@ -17,6 +17,6 @@
 
 function [whitensignals, whiteningMatrix, dewhiteningMatrix] = whiteesig(signal, E, D)
 
-whiteningMatrix = E * inv(sqrt (D)) * E';
-dewhiteningMatrix = E * sqrt (D) * E';
+whiteningMatrix = E * inv(sqrt(D)) * E';
+dewhiteningMatrix = E * sqrt(D) * E';
 whitensignals =  whiteningMatrix * signal;

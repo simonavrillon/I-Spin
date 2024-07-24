@@ -1,9 +1,9 @@
 function MUFilters = getMUfilters(EMG, EMGmask, Distime)
 
 EMG(EMGmask > 0,:) = [];
-nbextchan = 1500;
+nbextchan = 1000;
 exFactor = round(nbextchan/size(EMG,1));
-eSIG = extend(EMG,exFactor);
+eSIG = demean(extend(EMG,exFactor));
 
 
 % Recalculate MUfilters

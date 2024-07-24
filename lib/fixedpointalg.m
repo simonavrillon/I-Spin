@@ -25,12 +25,12 @@ TOL = 0.0001; % tolerance between two iterations
 BBT = B * B';
 
 switch contrastfunc
-    case 'square'
+    case 'skew'
         gp = @(x) 2*x;
         g = @(x) x.^2;
-    case 'skew'
-        gp = @(x) (2*x.^2)/3;
-        g = @(x) (x.^3)/3;
+    case 'kurtosis'
+        gp = @(x) 3*x.^2;
+        g = @(x) x.^3;
     case 'logcosh'
         gp = @(x) tanh(x);
         g = @(x) log(cosh(x));
@@ -39,11 +39,11 @@ end
 while delta(k) > TOL && k < maxiter
     % Update weights
     wlast = w; % Save last weights
-    
+
     % Contrast function
     wTX = w' * X;
     A = mean(gp(wTX));
-    w = X * (g(wTX')) - A * w;
+    w = mean(X .* g(wTX), 2)  - A * w;
 
 %   3b: Orthogonalization
     w = w - BBT * w;
