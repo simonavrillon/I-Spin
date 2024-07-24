@@ -5,6 +5,7 @@ We provide here a step-by-step protocol to facilitate the implementation of I-Sp
 
 # Updates:
 August 2024: Release of I-spin Open Ephys that interface with the Open Ephys GUI (compatible with the Open Ephys acquisition board or the Intan RHD recording system)
+
 September-October 2024: Release of I-Spin on Python
 
 # Citation and technical support:
